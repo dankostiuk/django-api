@@ -1,0 +1,12 @@
+{% extends 'main/layout.html' %} {% block content %}
+<h3 class="center-align green lighten-3">{{ main.title }}</h3>
+<div class="card">
+  <div class="card-content">
+    {{ main.body }}
+  </div>
+  <div class="card-action">
+    {{ main.created_at }}
+  </div>
+</div>
+<a href="/main" class="btn">Go back</a>
+{% endblock %}
